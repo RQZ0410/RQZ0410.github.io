@@ -1,0 +1,54 @@
+﻿html {
+    /*基础10像素*/
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: #00539F;
+}
+
+p {
+    /* 被后定义值覆盖*/
+    color: red;
+    width: 500px;
+    border: 1px dashed black;
+
+}
+
+li, h1, p {
+    color: violet;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 16px;
+    /* line-height 后而可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 600px;
+    /*为 margin 或 padding 等属性设置两个值时，第一个值代表元素的上方和下方（在这个例子中设置为 0)
+     第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称）*/
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    background-color: #a9cdfb;
+    border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #ffd800;
+    /*水平偏移值 垂直偏移值 模糊半径 颜色*/
+    text-shadow: 3px 3px 5px black;
+}
+
+img {
+    /*给予其块级行为*/
+    display: block;
+    margin: 0 auto;
+}
